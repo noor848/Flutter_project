@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
 
+
+        var emil=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,6 +33,7 @@ SizedBox(height: 30,),
                 keyboardType:TextInputType.emailAddress,
 
                  decoration:InputDecoration(
+                     prefixIcon: Icon(Icons.email),
                   border:  OutlineInputBorder(
                  borderSide:  BorderSide(color: Colors.teal)
               ),
@@ -39,8 +42,11 @@ SizedBox(height: 30,),
               ),),
               SizedBox(height: 20,),
               TextFormField(
+                controller: emil,
+                obscureText:true,
                 keyboardType:TextInputType.visiblePassword,
                 decoration:InputDecoration(
+                  prefixIcon: Icon(Icons.lock),
                     border:  OutlineInputBorder(
                         borderSide:  BorderSide(color: Colors.teal)
                     ),
@@ -53,7 +59,11 @@ SizedBox(height: 30,),
               Container(
                 width: double.infinity,
                 height: 50,
-                child: MaterialButton(onPressed: (){},
+                child: MaterialButton(onPressed: (){
+
+                  print(emil.value);
+
+                },
                   child: Text("Sign In",style: TextStyle(color: Colors.white,fontSize: 15),),
                   color: Colors.blue,
 
