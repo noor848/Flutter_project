@@ -1,24 +1,26 @@
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+import 'login_page.dart';
 
 void main() {
-  runApp();
+  runApp(MyApp());
 }
 
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
-class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    
-    return build(context)
-    
-    
+    return MaterialApp(
+      home: LoginPage(),
+
+
+
+    );
   }
-  
-  
-  
-  
-  
-  
 }
+
+
+
