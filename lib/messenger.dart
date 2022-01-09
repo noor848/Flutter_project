@@ -43,8 +43,11 @@ title:
 
        body: Padding(
          padding: const EdgeInsets.all(20.0),
-         child: Column(
-           children: [
+         child: SingleChildScrollView(
+           child: Container(
+             height: 1000,
+             child: Column(
+               children: [
 Padding(
   padding: const EdgeInsets.all(8.0),
   child:   Container(
@@ -59,7 +62,7 @@ SizedBox(width: 10,),
 Icon(
   Icons.search
 ),SizedBox(width: 10,)
-          ,Text("Search",style: TextStyle(fontSize: 16),)
+              ,Text("Search",style: TextStyle(fontSize: 16),)
 
       ],
     ),
@@ -76,16 +79,24 @@ Container(
 ),
 
    Expanded(
-     child: Container(
-       width: double.infinity,
-       child: ListView.separated(itemBuilder: (context, index) => vertical(), separatorBuilder: (context, index) =>
-           SizedBox(height: 10,)
+     child: SingleChildScrollView(
+       child: Container(
+         width: double.infinity,
+         child: ListView.separated(
+           physics: NeverScrollableScrollPhysics(),
+               shrinkWrap: true,
+                /// physics:NeverScrollableScrollPhysics() ,
+                 itemBuilder: (context, index) => vertical(), separatorBuilder: (context, index) =>
+                 SizedBox(height: 10,)
 
-           , itemCount:10 ),
+                 , itemCount:10 ),
+       ),
      ),
    )
 
-           ],
+               ],
+             ),
+           ),
          ),
        ),
 
