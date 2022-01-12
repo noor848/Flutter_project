@@ -3,21 +3,11 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-class  LoginPage extends StatefulWidget {
 
-  @override
-  _State createState() => _State();
-}
+class LoginPage extends StatelessWidget {
 
-class _State extends State<LoginPage> {
-  var emil=TextEditingController();
-  var formkey=GlobalKey<FormState>();
-  bool eye=true;
-@override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-  }
+
+        var emil=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,110 +18,74 @@ class _State extends State<LoginPage> {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: Form(
-            key: formkey,
-            child: Column(
-              ///mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+          child: Column(
+            ///mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
 
-                Text("Login",style: TextStyle(
-                  fontSize: 50,
-                  fontWeight: FontWeight.w700,
+              Text("Login",style: TextStyle(
+                fontSize: 50,
+                fontWeight: FontWeight.w700,
 
+              ),),
+SizedBox(height: 30,),
+              TextFormField(
+                keyboardType:TextInputType.emailAddress,
+
+                 decoration:InputDecoration(
+                     prefixIcon: Icon(Icons.email),
+                  border:  OutlineInputBorder(
+                 borderSide:  BorderSide(color: Colors.teal)
+              ),
+                  labelText: "Email",
+                   hintText: "Enter Email"
+              ),),
+              SizedBox(height: 20,),
+              TextFormField(
+                controller: emil,
+                obscureText:true,
+                keyboardType:TextInputType.visiblePassword,
+                decoration:InputDecoration(
+                  prefixIcon: Icon(Icons.lock),
+                    border:  OutlineInputBorder(
+                        borderSide:  BorderSide(color: Colors.teal)
+                    ),
+                    labelText: "Password",
+                    hintText: "Enter password"
                 ),),
-                SizedBox(height: 30,),
-                TextFormField(
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please enter your  Email';
-                    }
-                    return null;
-                  },
-                  keyboardType:TextInputType.emailAddress,
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                width: double.infinity,
+                height: 50,
+                child: MaterialButton(onPressed: (){
 
-                  decoration:const InputDecoration(
-                      prefixIcon: Icon(Icons.email),
-                      border:  OutlineInputBorder(
-                          borderSide:  BorderSide(color: Colors.teal)
-                      ),
-                      labelText: "Email",
-                      hintText: "Enter Email"
-                  ),),
-                SizedBox(height: 20,),
-                TextFormField(
-                  controller: emil,
-                  obscureText:eye?true:false,
-                  validator: (value){
+                  print(emil.value);
 
-                    if (value == null || value.isEmpty) {
-                      return 'Please enter password';
-                    }
-                    return null;
+                },
+                  child: Text("Sign In",style: TextStyle(color: Colors.white,fontSize: 15),),
+                  color: Colors.blue,
 
-                  },
-                  keyboardType:TextInputType.visiblePassword,
-                  decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.lock),
-                      suffixIcon: IconButton(
-                        icon:  Icon(eye?Icons.remove_red_eye_outlined:Icons.remove_red_eye),
-                        onPressed: (){
-                          setState(() {
-                            eye=!eye;
-
-                          });
-
-
-                        },
-                      ),
-                      border:  OutlineInputBorder(
-                          borderSide:  BorderSide(color: Colors.teal)
-                      ),
-                      labelText: "Password",
-                      hintText: "Enter password"
-                  ),),
-                SizedBox(
-                  height: 20,
                 ),
-                Container(
-                  width: double.infinity,
-                  height: 50,
-                  child: MaterialButton(onPressed: (){
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
 
-                    print(emil.value);
+                  Text("Don't have account?"),
+                  TextButton(onPressed: (){}, child: Text(
+                    "Register Now !"
+,style: TextStyle(color: Colors.blue),
+                  ))
 
-                    if (formkey.currentState!.validate()) {
-                      // If the form is valid, display a snackbar. In the real world,
-                      // you'd often call a server or save the information in a database.
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Processing Data')),
-                      );
-                    }
+                ],
+              )
 
-                  },
-                    child: Text("Sign In",style: TextStyle(color: Colors.white,fontSize: 15),),
-                    color: Colors.blue,
-
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-
-                    Text("Don't have account?"),
-                    TextButton(onPressed: (){}, child: Text(
-                      "Register Now !"
-                      ,style: TextStyle(color: Colors.blue),
-                    ))
-
-                  ],
-                )
-
-              ],
-            ),
+            ],
           ),
         ),
       ),
@@ -141,6 +95,3 @@ class _State extends State<LoginPage> {
     );
   }
 }
-
-
-
