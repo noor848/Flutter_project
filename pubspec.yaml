@@ -38,7 +38,8 @@ dependencies:
   flutter_bloc: ^8.0.1
   intl: ^0.17.0
   flutter_services_binding: ^0.1.0
-  sqflite: ^2.0.2
+  sqflite: ^2.0.0-nullsafety.2
+
 
 dev_dependencies:
   flutter_test:
