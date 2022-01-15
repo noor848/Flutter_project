@@ -39,6 +39,10 @@ dependencies:
   intl: ^0.17.0
   flutter_services_binding: ^0.1.0
   sqflite: ^2.0.0-nullsafety.2
+  dio: ^4.0.4
+  webview_flutter: ^2.0.0
+  shared_preferences: ^2.0.12
+
 
 
 dev_dependencies:
