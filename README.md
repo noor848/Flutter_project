@@ -15,18 +15,23 @@ ALl work done using Bloc Cancel changes
 # BMI calculator
 ![Screenshot_20220109-212734](https://user-images.githubusercontent.com/54281955/148698062-a75984d7-cdc9-491a-9f28-fa7876dfe61f.jpg)
 ![Screenshot_20220109-212738](https://user-images.githubusercontent.com/54281955/148698068-9378f06f-5a06-498c-94d3-1e8ed5db83ec.jpg)
+
 # Login Page 
 ![Screenshot_20220108-095152](https://user-images.githubusercontent.com/54281955/148698069-b2a1bee7-1e55-478e-bce7-233ecd3b9bb3.jpg)
+
 # Messenger
 ![Screenshot_20220108-210838](https://user-images.githubusercontent.com/54281955/148698070-5133e073-ea3c-478d-8f99-214c142a724f.jpg)
+
 # Counter
 ![Screenshot_20220109-155009](https://user-images.githubusercontent.com/54281955/148698072-3a2082b3-0faf-490b-91a6-aef7de5b4ec6.jpg)
-###Meal App
+
+# Meal App
 ![Screenshot_20220308-170132](https://user-images.githubusercontent.com/54281955/157272553-85a1fceb-e793-4f4a-b5ff-277b680bdc32.jpg)
 ![Screenshot_20220308-170141](https://user-images.githubusercontent.com/54281955/157272223-cbf166f6-2c66-4c01-ab66-c32dec23987a.jpg)
 ![Screenshot_20220308-170151](https://user-images.githubusercontent.com/54281955/157272275-d114ec2d-090c-4871-87c4-ea3f438f8e51.jpg)
 ![Screenshot_20220308-170156](https://user-images.githubusercontent.com/54281955/157272285-2d8ed4c4-dac8-4770-b407-979a38d712d2.jpg)
-#News App
+
+# News App
 ![Screenshot_20220115-165457](https://user-images.githubusercontent.com/54281955/157272678-fa463c4d-f376-4ea1-ae9c-42008ec8886b.jpg)
 ## Animated clouds 
 https://user-images.githubusercontent.com/54281955/157272731-941f3d78-a978-4e3e-b65c-4204e0f0ec54.mp4
