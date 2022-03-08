@@ -29,7 +29,12 @@ ALl work done using Bloc Cancel changes
 ##News App
 ![Screenshot_20220115-165457](https://user-images.githubusercontent.com/54281955/157272678-fa463c4d-f376-4ea1-ae9c-42008ec8886b.jpg)
 ## Animated clouds 
-
 https://user-images.githubusercontent.com/54281955/157272731-941f3d78-a978-4e3e-b65c-4204e0f0ec54.mp4
-https://photos.app.goo.gl/6VBqVFqe2tzxw3TCA
+
+##newsNewStyle
+![image](https://user-images.githubusercontent.com/54281955/157275125-5aca4e6a-fe4f-4abe-b500-e89d247275ab.png)
+
+##LoginPge 
+![image](https://user-images.githubusercontent.com/54281955/157275167-7c4abc23-f435-45e3-8dbf-ea06766279f3.png)
+![image](https://user-images.githubusercontent.com/54281955/157275186-148eaf9a-f44d-4ba8-9546-090e9b1f6a50.png)
 
