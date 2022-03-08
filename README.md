@@ -20,7 +20,7 @@ ALl work done using Bloc Cancel changes
 # Messenger
 ![Screenshot_20220108-210838](https://user-images.githubusercontent.com/54281955/148698070-5133e073-ea3c-478d-8f99-214c142a724f.jpg)
 # Counter
-![Screenshot_20220109-155009](https://user-images.githubusercontent.com/54281955/148698072-3a2082b3-0faf-
+![image](https://user-images.githubusercontent.com/54281955/157273873-ea293455-1abc-4ab9-bb78-6cf373b745fe.png)
 ###Meal App
 ![Screenshot_20220308-170132](https://user-images.githubusercontent.com/54281955/157272553-85a1fceb-e793-4f4a-b5ff-277b680bdc32.jpg)
 ![Screenshot_20220308-170141](https://user-images.githubusercontent.com/54281955/157272223-cbf166f6-2c66-4c01-ab66-c32dec23987a.jpg)
